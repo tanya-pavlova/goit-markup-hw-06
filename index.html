@@ -268,7 +268,7 @@
             </ul>
         </div>
      </section>
-<!--- CLIENTS --->
+    <!--- CLIENTS --->
      <section class="clients">
          <div class="container">
             <h2 class="title">Постоянные клиенты</h2>
@@ -320,8 +320,8 @@
      </section>
     </main>
 
-<!-- FOOTER -->
-<footer class="footer ft-background">
+    <!-- FOOTER -->
+    <footer class="footer ft-background">
     <div class="container">
         <div class="address-container">
             <a class="logo-link link" href="./index.html"> 
@@ -387,67 +387,69 @@
             </form>
         </div>
     </div>
-</footer>
+    </footer>
 
-<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
    
-    <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-            <svg class="close-button-svg">
-                <use href="./images/symbol-defs.svg#icon-x">
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="close-button-svg">
+                    <use href="./images/symbol-defs.svg#icon-x">
 
-            </use></svg>
-        </button>
+                </use></svg>
+            </button>
 
-        <form action="#" class="contact-form" >
-            <h2 class="form-contact-title">Оставьте свои данные, мы вам перезвоним</h2>
-            
-                <label for="user-name" class="modal-form-field" >Имя</label>
+            <form action="#" class="contact-form" >
+                <h2 class="form-contact-title">Оставьте свои данные, мы вам перезвоним</h2>
+                
+                    <label for="user-name" class="modal-form-field" >Имя</label>
+                        <span class="modal-form-field-wrapper">
+                    <input type="text" class="contact-form__input" name="user-name" id="user-name" minlength="2" required >
+                    <svg width="12" height="12" class="modal-form-svg">
+                        <use href="./images/symbol-defs.svg#icon-name"></use></svg>
+                        </span>                
+                
+
+                
+                    <label class="modal-form-field" for="user-tel">Телефон</label>
+                    <span class="modal-form-field-wrapper" >
+                <input type="tel" class="contact-form__input" name="user-tel" id="user-tel"  required>
+                <svg width="13" height="13" class="modal-form-svg">
+                    <use href="./images/symbol-defs.svg#icon-tel"></use></svg>
+                    </span>
+                
+
+                
+                <label class="modal-form-field" for="user-email">Почта</label>               
                     <span class="modal-form-field-wrapper">
-                <input type="text" class="contact-form__input" name="user-name" id="user-name" minlength="2" required >
-                <svg width="12" height="12" class="modal-form-svg">
-                    <use href="./images/symbol-defs.svg#icon-name"></use></svg>
-                    </span>                
-            
+                <input type="email" class="contact-form__input" name="user-email" id="user-email" required>
+                <svg width="15" height="12" class="modal-form-svg">
+                    <use href="./images/symbol-defs.svg#icon-email"></use> </svg>
+                    </span>
+                
 
-            
-                <label class="modal-form-field" for="user-tel">Телефон</label>
-                <span class="modal-form-field-wrapper" >
-            <input type="tel" class="contact-form__input" name="user-tel" id="user-tel"  required>
-            <svg width="13" height="13" class="modal-form-svg">
-                <use href="./images/symbol-defs.svg#icon-tel"></use></svg>
+                
+                    <label class="modal-form-field" for="comment">Комментарий</label>
+                    <textarea name="user-message" id="comment" cols="30" rows="10" class="modal-form-message" placeholder="Введите текст"></textarea>          
+                
+                
+                <span class="modal-form-policy-wrapper">
+                    <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy"
+                    class="modal-form-policy visually-hidden">         
+                
+                    <label for="check-policy" class="modal-form-policy-label">
+                    Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="#">Условия договора</a>
+                    </label>
                 </span>
-            
 
-            
-            <label class="modal-form-field" for="user-email">Почта</label>               
-                <span class="modal-form-field-wrapper">
-            <input type="email" class="contact-form__input" name="user-email" id="user-email" required>
-            <svg width="15" height="12" class="modal-form-svg">
-                <use href="./images/symbol-defs.svg#icon-email"></use> </svg>
-                </span>
-            
-
-            
-                <label class="modal-form-field" for="comment">Комментарий</label>
-                <textarea name="user-message" id="comment" cols="30" rows="10" class="modal-form-message" placeholder="Введите текст"></textarea>          
-            
-            
-            <span class="modal-form-policy-wrapper">
-                <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy"
-                class="modal-form-policy visually-hidden">         
-              
-                <label for="check-policy" class="modal-form-policy-label">
-                Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="#">Условия договора</a>
-                </label>
-            </span>
-
-            <div class="modal-form-btn-wrapper">
-                <button type="submit" class="modal-form-btn">Отправить</button>
-            </div>
-    </form>
-    </div>
+                <div class="modal-form-btn-wrapper">
+                    <button type="submit" class="modal-form-btn">Отправить</button>
+                </div>
+            </form>
+        </div>
     
-    <script src="./js/modal.js"></script>
+    </div>
+        <script src="./js/modal.js"></script>
+
 </body>
 </html>
