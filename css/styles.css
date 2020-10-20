@@ -99,14 +99,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
+    padding: 40px;
 }
 
 .contact-form {  
     display: flex;
-    flex-direction: column; 
-    padding: 40px;
-    
+    flex-direction: column;   
 }
 
 
@@ -166,8 +164,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;    
 }
 
 .modal-form-policy-label{
@@ -191,15 +188,12 @@ body {
 .modal-form-policy-label::before {
     display: inline-block;
     content: "";
-    width: 16px;
-    height: 15px;
-    outline: 1px solid #212121;
-    margin-right: 7px;
-   
-}
- 
-.modal-form-policy-link {
-    color: var(--accent-color);
+    width: 15px;
+    height: 14px;
+    border: 2px solid #212121;
+    margin-right: 7px;   
+    outline: none;
+    border-radius: 2px;
 }
   
   .modal-form-policy:checked + .modal-form-policy-label::before {    
@@ -207,9 +201,14 @@ body {
     background-image: url(../images/chosen.svg);
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    outline: none;
+  }
 
+.modal-form-policy-link {
+    color: var(--accent-color);
 }
-
 
 .modal-form-btn {    
     font-family: var(--main-font);  
