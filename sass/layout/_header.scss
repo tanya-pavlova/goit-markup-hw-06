@@ -1,0 +1,144 @@
+.header {
+    padding: 24px 0;   
+  }
+
+
+.navigation-list-link {        
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--title-main-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: var(--accent-color);
+  
+}
+
+.email-icon {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--secondary-color);
+}
+
+.tel-icon {
+    
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--secondary-color);
+}
+
+
+.email-icon, 
+.tel-icon {
+    fill: var(--secondary-color);
+}
+
+.header-email-link, 
+.header-tel-link {
+    font-family: var(--main-font);    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-email-link:hover .email-icon,
+.header-email-link:focus .email-icon,
+.header-tel-link:hover .tel-icon,
+.header-tel-link:focus .tel-icon {
+    fill: var(--accent-color); 
+    
+}
+
+.header-email-link:hover,
+.header-email-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {  
+    color: var(--accent-color); 
+   
+}
+
+.logo-accent {
+    font-family: var(--secondary-font);  
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+   } 
+
+.header .logo {
+    font-family: var(--secondary-font);  
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.header .container {
+    display: flex;    
+    align-items: center;    
+}
+
+.navigation {
+    display: flex; 
+    
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.logo-link {
+    margin-right: 93px;
+    margin-left: 100px;
+}
+
+
+.current {
+    color: var(--accent-color);
+    
+}
+
+
+.header-email-link {
+    margin-right: 50px;
+}
+
+.navigation-list-link {
+    position: relative;
+}
+
+.current::after  {
+    display: block;    
+    content: "";
+    position: absolute;  
+    width: 100%;
+    height: 4px;   
+    border-radius: 2px;
+    align-items: flex-end;
+    bottom: -28px;  
+    background-color: var(--accent-color);
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header .address {
+
+    margin-left: auto;  
+}
